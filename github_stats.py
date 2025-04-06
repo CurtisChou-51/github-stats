@@ -118,7 +118,7 @@ class Queries(object):
 
     @staticmethod
     def repos_overview(
-        contrib_cursor: Optional[str] = None, owned_cursor: Optional[str] = None
+        ignore_forked_repos, contrib_cursor: Optional[str] = None, owned_cursor: Optional[str] = None
     ) -> str:
         """
         :return: GraphQL query with overview of user repositories
@@ -133,7 +133,7 @@ class Queries(object):
             field: UPDATED_AT,
             direction: DESC
         }},
-        isFork: false,
+        isFork: {"false" if ignore_forked_repos else "null"},
         after: {"null" if owned_cursor is None else '"'+ owned_cursor +'"'}
     ) {{
       pageInfo {{
@@ -311,7 +311,7 @@ Languages:
         while True:
             raw_results = await self.queries.query(
                 Queries.repos_overview(
-                    owned_cursor=next_owned, contrib_cursor=next_contrib
+                    ignore_forked_repos=self._ignore_forked_repos, owned_cursor=next_owned, contrib_cursor=next_contrib
                 )
             )
             raw_results = raw_results if raw_results is not None else {}
