@@ -44,11 +44,10 @@ jobs:
         EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
 
     # Commit all changed files to the repository
-    - name: Commit to the repo
-      run: |
-        git config --global user.name "CurtisChou-51/github-stats"
-        git config --global user.email "github-stats[bot]@CurtisChou-51.github.io"
-        git add .
-        # Force the build to succeed, even if no files were changed
-        git commit -m 'Update generated files' || true
-        git push
+    - name: Commit output
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+        target_branch: output
+        build_dir: generated
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
