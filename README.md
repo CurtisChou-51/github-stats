@@ -1,4 +1,6 @@
-# [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
+# [GitHub Stats Visualization](https://github.com/CurtisChou-51/github-stats)
+
+- This is a project created from [jstrieb/github-stats](https://github.com/jstrieb/github-stats)
 
 <!--
 https://github.community/t/support-theme-context-for-images-in-light-vs-dark-mode/147981/84
@@ -93,21 +95,18 @@ For more information on inaccuracies, see issue
      could set the value to `html,tex`.
    - To show statistics only for "owned" repositories and not forks with
      contributions, add an environment variable (under the `env` header in the
-     [main
-     workflow](https://github.com/jstrieb/github-stats/blob/master/.github/workflows/main.yml))
+     [main workflow](https://github.com/jstrieb/github-stats/blob/master/.github/workflows/main.yml))
      called `EXCLUDE_FORKED_REPOS` with a value of `true`.
    - These other values are added as secrets by default to prevent leaking
      information about private repositories. If you're not worried about that,
-     you can change the values directly [in the Actions workflow
-     itself](https://github.com/jstrieb/github-stats/blob/05de1314b870febd44d19ad2f55d5e59d83f5857/.github/workflows/main.yml#L48-L53).
-6. Go to the [Actions
-   Page](../../actions?query=workflow%3A"Generate+Stats+Images") and press "Run
+     you can change the values directly [in the Actions workflow itself](https://github.com/jstrieb/github-stats/blob/05de1314b870febd44d19ad2f55d5e59d83f5857/.github/workflows/main.yml#L48-L53).
+6. Go to the [Actions Page](../../actions?query=workflow%3A"Generate+Stats+Images") and press "Run
    Workflow" on the right side of the screen to generate images for the first
    time. 
    - The images will be automatically regenerated every 24 hours, but they can
      be regenerated manually by running the workflow this way.
 7. Take a look at the images that have been created in the
-   [`generated`](generated) folder.
+   [`output`](../output) branch.
 8. To add your statistics to your GitHub Profile README, copy and paste the
    following lines of code into your markdown content. Change the `username`
    value to your GitHub username.
