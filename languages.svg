@@ -1,0 +1,239 @@
+<svg id="gh-dark-mode-only" width="360" height="210" xmlns="http://www.w3.org/2000/svg">
+<style>
+svg {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#background {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  fill: white;
+  stroke: rgb(225, 228, 232);
+  stroke-width: 1px;
+  rx: 6px;
+  ry: 6px;
+}
+
+#gh-dark-mode-only:target #background {
+  fill: #0d1117;
+  stroke-width: 0.5px;
+}
+
+foreignObject {
+  width: calc(100% - 10px - 32px);
+  height: calc(100% - 10px - 24px);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(36, 41, 46);
+  fill: rgb(36, 41, 46);
+}
+
+#gh-dark-mode-only:target h2 {
+  color: #c9d1d9;
+  fill: #c9d1d9;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  display: inline-flex;
+  font-size: 12px;
+  margin-right: 2ch;
+  align-items: center;
+  flex-wrap: nowrap;
+  transform: translateX(-500%);
+  animation: slideIn 2s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+div.ellipsis {
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.octicon {
+  fill: rgb(88, 96, 105);
+  margin-right: 0.5ch;
+  vertical-align: top;
+}
+
+#gh-dark-mode-only:target .octicon {
+  color: #8b949e;
+  fill: #8b949e;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  overflow: hidden;
+  background-color: rgb(225, 228, 232);
+  border-radius: 6px;
+  outline: 1px solid transparent;
+  margin-bottom: 1em;
+}
+
+#gh-dark-mode-only:target .progress {
+  background-color: rgba(110, 118, 129, 0.4);
+}
+
+.progress-item {
+  outline: 2px solid rgb(225, 228, 232);
+  border-collapse: collapse;
+}
+
+#gh-dark-mode-only:target .progress-item {
+  outline: 2px solid #393f47;
+}
+
+.lang {
+  font-weight: 600;
+  margin-right: 4px;
+  color: rgb(36, 41, 46);
+}
+
+#gh-dark-mode-only:target .lang {
+  color: #c9d1d9;
+}
+
+.percent {
+  color: rgb(88, 96, 105)
+}
+
+#gh-dark-mode-only:target .percent {
+  color: #8b949e;
+}
+</style>
+<g>
+<rect x="5" y="5" id="background" />
+<g>
+<foreignObject x="21" y="17" width="318" height="176">
+<div xmlns="http://www.w3.org/1999/xhtml" class="ellipsis">
+
+<h2>Languages Used (By File Size)</h2>
+
+<div>
+<span class="progress">
+<span style="background-color: #178600;width: 56.968%;" class="progress-item"></span><span style="background-color: #f1e05a;width: 17.139%;" class="progress-item"></span><span style="background-color: #e34c26;width: 11.206%;" class="progress-item"></span><span style="background-color: #663399;width: 9.513%;" class="progress-item"></span><span style="background-color: #3572A5;width: 3.372%;" class="progress-item"></span><span style="background-color: #e38c00;width: 0.817%;" class="progress-item"></span><span style="background-color: #199f4b;width: 0.638%;" class="progress-item"></span><span style="background-color: #C1F12E;width: 0.236%;" class="progress-item"></span><span style="background-color: #EB8CEB;width: 0.079%;" class="progress-item"></span><span style="background-color: #384d54;width: 0.031%;" class="progress-item"></span>
+</span>
+</div>
+
+<ul>
+
+
+<li style="animation-delay: 0ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#178600;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">C#</span>
+<span class="percent">56.97%</span>
+</li>
+
+
+<li style="animation-delay: 150ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#f1e05a;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">JavaScript</span>
+<span class="percent">17.14%</span>
+</li>
+
+
+<li style="animation-delay: 300ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#e34c26;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">HTML</span>
+<span class="percent">11.21%</span>
+</li>
+
+
+<li style="animation-delay: 450ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#663399;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">CSS</span>
+<span class="percent">9.51%</span>
+</li>
+
+
+<li style="animation-delay: 600ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#3572A5;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">Python</span>
+<span class="percent">3.37%</span>
+</li>
+
+
+<li style="animation-delay: 750ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#e38c00;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">TSQL</span>
+<span class="percent">0.82%</span>
+</li>
+
+
+<li style="animation-delay: 900ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#199f4b;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">Vim Snippet</span>
+<span class="percent">0.64%</span>
+</li>
+
+
+<li style="animation-delay: 1050ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#C1F12E;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">Batchfile</span>
+<span class="percent">0.24%</span>
+</li>
+
+
+<li style="animation-delay: 1200ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#EB8CEB;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">XSLT</span>
+<span class="percent">0.08%</span>
+</li>
+
+
+<li style="animation-delay: 1350ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#384d54;"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">Dockerfile</span>
+<span class="percent">0.03%</span>
+</li>
+
+
+
+</ul>
+
+</div>
+</foreignObject>
+</g>
+</g>
+</svg>
