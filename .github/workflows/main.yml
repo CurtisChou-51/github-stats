@@ -16,13 +16,13 @@ jobs:
 
     steps:
     # Check out repository under $GITHUB_WORKSPACE, so the job can access it
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
 
-    # Run using Python 3.8 for consistency and aiohttp
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v4
+    # Run using Python 3.12 (3.8 is EOL and unavailable on Ubuntu 26.04)
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v6
       with:
-        python-version: '3.8'
+        python-version: '3.12'
         architecture: 'x64'
         cache: 'pip'
 
@@ -45,7 +45,7 @@ jobs:
 
     # Commit all changed files to the repository
     - name: Commit output
-      uses: crazy-max/ghaction-github-pages@v2
+      uses: crazy-max/ghaction-github-pages@v4
       with:
         target_branch: output
         build_dir: generated
